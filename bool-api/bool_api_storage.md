@@ -72,6 +72,7 @@ custom type:
 "HandleConnection": {
     "_enum": {
       "Cid": "CommitteeId",
+      "CidWithAnchor": "(CommitteeId, u16, Vec<u8>)",
       "CommitteeParam": "(u16, u16, (u128, u128), CryptoType, u8)"
     }
 },
@@ -102,8 +103,10 @@ custom type:
     "fee": "(u128, u128)",
     "crypto": "CryptoType",
     "fork": "u8",
-    "channel_id": "u32"
-},
+    "channel_id": "u32",
+    "chain_id": "u16",
+    "anchor": "Vec<u8>"
+  },
 "TxSource": {
     "chain_type": "u16",
     "uid": "Vec<u8>",
@@ -266,10 +269,6 @@ ___
 ### epochChanges(`(CommitteeId, u32)`): `Vec<(u8, EpochChange)>`
 - **interface**: `api.query.committee.epochChanges`
 - **summary**:    Epoch change message(e.g. signature) submitted by new epoch members.
-
-### addressForCommittee(`CommitteeId`): `Vec<u8>`
-- **interface**: `api.query.committee.addressForCommittee`
-- **summary**:    Anchor address about the committee.
 
 ### rewardsForFork(`(CommitteeId, u32, u8)`): `(u128, Vec<Vec<u8>>)`
 - **interface**: `api.query.committee.rewardsForFork`

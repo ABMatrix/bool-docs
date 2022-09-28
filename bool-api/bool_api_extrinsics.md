@@ -143,7 +143,7 @@ ___
 - **interface**: `api.tx.committee.exit`
 - **summary**:    Device exit from Register-List and will successfully.
 
-### createChannel(chains: `(u16, u16)`, info: `Vec<u8>`, connection: `(HandleConnection, HandleConnection)`)
+### createChannel(info: `Vec<u8>`, connection: `(HandleConnection, HandleConnection)`)
 - **interface**: `api.tx.committee.createChannel`
 - **summary**:    Create a new channel and connect to two Committee.
 
@@ -151,7 +151,7 @@ ___
 - **interface**: `api.tx.committee.createCommittee`
 - **summary**:    Create a committee with parameters.
 
-### activeCommittee(cid: `CommitteeId`, address: `Vec<u8>`)
+### activeCommittee(cid: `CommitteeId`, chain_id: `u16`, address: `Vec<u8>`)
 - **interface**: `api.tx.committee.activeCommittee`
 - **summary**:    Bind anchor address with committee.
 
