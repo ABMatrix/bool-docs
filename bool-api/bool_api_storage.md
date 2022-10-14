@@ -60,7 +60,8 @@ custom type:
       "Creating",
       "Initializing",
       "Stop",
-      "Working"
+      "Working",
+      "CreateFinished"
     ]
 },
 "ChannelState": {
@@ -72,7 +73,7 @@ custom type:
 "HandleConnection": {
     "_enum": {
       "Cid": "CommitteeId",
-      "CidWithAnchor": "(CommitteeId, u16, Vec<u8>)",
+      "CidWithAnchor": "(CommitteeId, u32, Vec<u8>)",
       "CommitteeParam": "(u16, u16, (u128, u128), CryptoType, u8)"
     }
 },
@@ -85,7 +86,7 @@ custom type:
 },
 "Channel": {
     "channel_id": "u32",
-    "chains": "(u16, u16)",
+    "chains": "(u32, u32)",
     "info": "Vec<u8>",
     "cids": "(CommitteeId, CommitteeId)",
     "state": "ChannelState"
@@ -104,7 +105,7 @@ custom type:
     "crypto": "CryptoType",
     "fork": "u8",
     "channel_id": "u32",
-    "chain_id": "u16",
+    "chain_id": "u32",
     "anchor": "Vec<u8>"
   },
 "TxSource": {

@@ -15,6 +15,7 @@ custom type:
 "HandleConnection": {
     "_enum": {
       "Cid": "CommitteeId",
+      "CidWithAnchor": "(CommitteeId, u32, Vec<u8>)",
       "CommitteeParam": "(u16, u16, (u128, u128), CryptoType, u8)"
     }
 },
@@ -151,7 +152,7 @@ ___
 - **interface**: `api.tx.committee.createCommittee`
 - **summary**:    Create a committee with parameters.
 
-### activeCommittee(cid: `CommitteeId`, chain_id: `u16`, address: `Vec<u8>`)
+### activeCommittee(cid: `CommitteeId`, chain_id: `u32`, address: `Vec<u8>`)
 - **interface**: `api.tx.committee.activeCommittee`
 - **summary**:    Bind anchor address with committee.
 
