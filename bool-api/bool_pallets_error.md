@@ -106,7 +106,7 @@ InvalidForkId => 无效的副本id
 
 DuplicateChange => 换届报告重复
 
-IncorrectCandidate => *已丢弃
+IncorrectCandidate => 委员会候选人已满
 
 VrfVerifyFailed => *已丢弃
 
