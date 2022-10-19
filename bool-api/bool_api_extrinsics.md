@@ -148,7 +148,7 @@ ___
 - **interface**: `api.tx.committee.createChannel`
 - **summary**:    Create a new channel and connect to Committees.
 
-### bindCommittees(chain_id: `u32`, connection: `Vec<HandleConnection>`)
+### bindCommittees(chain_id: `u32`, cids: `Vec<CommitteeId>`)
 - **interface**: `api.tx.committee.bindCommittees`
 - **summary**:    Bind committees with target channel
 

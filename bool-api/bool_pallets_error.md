@@ -62,13 +62,17 @@ InvalidPids => 无效的供应商id
 
 InvalidParams => 参数错误
 
-IncorrectState => 状态错误
+InvalidChannelState => 跨链桥状态错误
+
+InvalidCommitteeState => 委员会状态错误
 
 NotMember => 非委员会成员
 
 MissionStateNormal => 跨链签名任务状态正常
 
-NotCreator => 所有权错误
+NotChannelCreator => 跨链器所有权错误
+
+NotCommitteeCreator => 委员会所有权错误
 
 RegistersNotEnough => 设备加入服务数不足
 
@@ -82,12 +86,12 @@ DuplicateChange => 换届报告重复
 
 IncorrectCandidate => 委员会候选人已满
 
-FinalishedConnection => 委员会已绑定跨链桥
+CommitteeAlreadyUsed => 委员会已绑定跨链桥
 
 IncorrectCid => 无效的委员会id
 
 DeviceNotServing => 设备未加入服务
 
-InvalidState => 设备状态错误
+InvalidDeviceState => 设备状态错误
 
 MissionTimeout => 签名任务已超时
