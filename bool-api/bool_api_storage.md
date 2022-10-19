@@ -70,13 +70,6 @@ custom type:
       "Working"
     ]
 },
-"HandleConnection": {
-    "_enum": {
-      "Cid": "CommitteeId",
-      "CidWithAnchor": "(CommitteeId, u32, Vec<u8>)",
-      "CommitteeParam": "(u16, u16, (u128, u128), CryptoType, u8)"
-    }
-},
 "CryptoType": {
     "_enum": [
       "Ecdsa",
@@ -86,9 +79,8 @@ custom type:
 },
 "Channel": {
     "channel_id": "u32",
-    "chains": "(u32, u32)",
     "info": "Vec<u8>",
-    "cids": "(CommitteeId, CommitteeId)",
+    "cids": "Vec<(CommitteeId, u32)>",
     "state": "ChannelState"
 },
 "Parameters": {
@@ -101,7 +93,6 @@ custom type:
     "parameters": "Parameters",
     "pubkey": "Vec<u8>",
     "state": "CommitteeState",
-    "fee": "(u128, u128)",
     "crypto": "CryptoType",
     "fork": "u8",
     "channel_id": "u32",
