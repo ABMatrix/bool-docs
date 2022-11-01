@@ -95,3 +95,32 @@ DeviceNotServing => 设备未加入服务
 InvalidDeviceState => 设备状态错误
 
 MissionTimeout => 签名任务已超时
+
+// pallet-session
+
+AlreadyBonded => 虚拟账户已绑定
+
+AlreadyPaired => 虚拟账户已存在
+
+InsufficientValue => 质押数目过低
+
+BadState => 无效账户
+
+CallNotAllowed => 候选人选举期，无法操作
+
+NotStash => 虚拟账户未创建
+
+NotController => 虚拟账户所有权错误
+
+NoMoreChunks => 质押减少次数已达上限
+
+EmptyTargets => 验证人列表为空
+
+TooManyTargets => 验证人列表过长
+
+BadTarget => 该验证人不允许被提名
+
+InvalidEraToReward => 无效的奖励周期
+
+AlreadyClaimed => 该周期奖励已领取
+
